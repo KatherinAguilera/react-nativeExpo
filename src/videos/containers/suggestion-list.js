@@ -9,6 +9,8 @@ import Separator from '../components/vertical-separator';
 import Suggestion from './../components/suggestion';
 
 class SuggestionList extends Component {
+  // key id para cada elemento optimizar redenderizado
+  keyExtractor = item => item.id.toString()
   // funcion empty
   renderEmtpy = () => <Empty text="No hay sugerencias :(" />
   itemSeparator = () => <Separator />
@@ -19,31 +21,13 @@ class SuggestionList extends Component {
     )
   }
   render() {
-    // si esta vacio esta lista muestra su componente EMPTY
-    const list = [
-      {
-        title: 'Avengers',
-        year: 2007,
-        key: '1',
-      },
-      {
-        title: 'Pokemon',
-        year: 1995,
-        key: '2'
-      }
-      ,
-      {
-        title: 'Naruto',
-        year: 2008,
-        key: '3'
-      }
-    ]
     return (
       <Layout
         title="Recomendado para ti"
         >
         <FlatList
-          data={list}
+          keyExtractor={this.keyExtractor}
+          data={this.props.list}
           ListEmptyComponent={this.renderEmtpy}
           ItemSeparatorComponent={this.itemSeparator}
           renderItem={ this.renderItem }
