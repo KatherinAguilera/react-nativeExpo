@@ -5,19 +5,21 @@ import {
 
 import Home from './src/screens/containers/home';
 import Header from './src/sections/components/header';
+import SuggestionList from './src/videos/containers/suggetion-list';
+
 
 
 export default class App extends Component {
   render() {
     return (
       <Home>
-      <Header>
-         <Text>React Native</Text>
-        </Header>
-        <Text>header</Text>
-        <Text>buscador</Text>
-        <Text>categorías</Text>
-        <Text>sugerencias</Text>
+          <Header>
+            <Text>React Native</Text>
+          </Header>
+          <Text>buscador</Text>
+          <Text>categorías</Text>
+          <Text>sugerencias</Text>
+          <SuggestionList />
       </Home>
     );
   }
