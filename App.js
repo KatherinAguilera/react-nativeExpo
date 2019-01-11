@@ -17,7 +17,6 @@ export default class App extends Component {
             <Text>React Native</Text>
           </Header>
           <Text>buscador</Text>
-          <Text>categorías</Text>
           <Text>sugerencias</Text>
           <SuggestionList />
       </Home>
