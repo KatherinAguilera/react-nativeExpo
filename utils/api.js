@@ -9,7 +9,12 @@ class Api {
     const query = await fetch(`${BASE_API}movie_suggestions.json?movie_id=${id}`);
     // datos del query
     const { data } = await query.json();
-    console.log(data);
+    // console.log(data);
+    return data.movies
+  }
+  async getMovies() {
+    const query = await fetch(`${BASE_API}list_movies.json?`);
+    const { data } = await query.json();
     return data.movies
   }
 }
