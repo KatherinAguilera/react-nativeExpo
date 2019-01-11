@@ -17,7 +17,7 @@ function Suggestion(props) {
           }}
         />
         <View style={styles.genre}>
-          <Text style={styles.genreText}>{props.genres}</Text>
+          <Text style={styles.genreText}>{props.genres[1]}</Text>
         </View>
       </View>
 
