@@ -5,7 +5,7 @@ import {
 
 import Home from './src/screens/containers/home';
 import Header from './src/sections/components/header';
-import SuggestionList from './src/videos/containers/suggetion-list';
+import SuggestionList from './src/videos/containers/suggestion-list';
 
 
 
