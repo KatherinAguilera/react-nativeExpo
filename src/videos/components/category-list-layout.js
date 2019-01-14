@@ -22,7 +22,7 @@ import {
  const styles = StyleSheet.create({
   container: {
     paddingVertical: 30,
-    paddingHorizontal: 10,
+    paddingHorizontal: 0,
   },
   title: {
     color: '#4c4c4c',
