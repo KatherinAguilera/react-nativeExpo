@@ -4,10 +4,11 @@ import {
   Text,
   Image,
   StyleSheet,
+  //indica que esta cargando
   ActivityIndicator,
 } from 'react-native';
 
- function Loading(props) {
+function Loading(props) {
   return (
     <View style={styles.container}>
       <Image
@@ -19,7 +20,7 @@ import {
   )
 }
 
- const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
@@ -34,4 +35,4 @@ import {
   }
 })
 
- export default Loading;
+export default Loading;
