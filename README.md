@@ -1,3 +1,3 @@
 # react-nativeExpo
-+npm install
-+expo start
++ npm install
++ expo start
