@@ -49,7 +49,7 @@ class Movie extends Component {
       </MovieLayout>
     </Animated.View>
   )
- }
+ } 
 }
 function mapStateToProps(state) {
   return {
