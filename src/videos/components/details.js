@@ -48,6 +48,7 @@ function Details(props) {
       </View>
       <View style={styles.trailer}>
         <WebView
+        //mostrar video de youtube  de acuerdo a la pelicula
           source={{html: makeHTML(props.yt_trailer_code)}}
         />
       </View>
