@@ -15,7 +15,8 @@
     "react-native-af-video-player": "^0.2.1",
     "react-native-video": "^3.2.1",
     "react-redux": "^6.0.0",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
