@@ -10,6 +10,9 @@ import SuggestionList from './src/videos/containers/suggestion-list';
 import API from './utils/api';
 import CategoryList from './src/videos/containers/category-list.js';
 import Player from './src/player/containers/player';
+import { Provider } from 'react-redux';
+import store from './store';
+
 
 export default class App extends Component {
   state = {
@@ -28,11 +31,14 @@ export default class App extends Component {
   }
   render() {
     return (
+      <Provider
+      store={store}
+    >
       <Home>
-        <Header>
-        <Text>React native</Text>
-        </Header>
+        <Header />
         <Player />
+        <Text></Text>
+        <Text></Text>
         <CategoryList
           list={this.state.categoryList}
         />
@@ -40,6 +46,7 @@ export default class App extends Component {
           list={this.state.suggestionList}
         />
       </Home>
+    </Provider>
     );
   }
 }

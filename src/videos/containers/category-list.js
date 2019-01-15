@@ -8,7 +8,12 @@ import Empty from '../components/empty';
 // import Suggestion from '../components/suggestion';
 import Category from '../components/category';
 import Layout from '../components/category-list-layout';
+import { connect } from 'react-redux';
 
+ function mapStateToProps(state) {
+  return {
+  }
+}
 class CategoryList extends Component {
   keyExtractor = item => item.id.toString()
   renderEmtpy = () => <Empty text="No hay sugerencias :(" />

@@ -27,14 +27,6 @@ import Layout from '../components/layout';
       <Layout
       loading={this.state.loading}
         video={
-          // <VideoPlayer
-          //   source={{uri: 'https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4'}}
-          //   style={styles.video}
-          //   resizeMode="contain"
-          //   ref={this._handleVideoRef}
-          //   onBuffer={this.onBuffer}
-          //   onLoad={this.onLoad}
-          // />
           <VideoPlayer
             videoProps={{
               shouldPlay: true,
@@ -42,7 +34,6 @@ import Layout from '../components/layout';
               source: {
                 uri: 'https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4',
               },
-              
             }}
             // onBuffer={this.onBuffer}
             // onLoad={this.onLoad}

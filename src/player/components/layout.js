@@ -32,15 +32,15 @@ import {
     right: 0,
     bottom: 0,
   },
-  overlay: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    bottom: 0,
-    right: 0,
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
+  // overlay: {
+  //   position: 'absolute',
+  //   left: 0,
+  //   top: 0,
+  //   bottom: 0,
+  //   right: 0,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  // }
 })
 
  export default Layout;
