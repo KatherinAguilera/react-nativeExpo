@@ -38,15 +38,17 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 10,
     flexDirection: 'row',
+    // borderBottom: 'solid black 2',
     justifyContent: 'space-between',
     marginTop: Platform.select ({
       android: 20,
     })
   },
   right: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    backgroundColor:'#70D6A8',
+    // backgroundColor:'#70D6A8',
     paddingRight: 4,
     paddingLeft: 1,
   }
