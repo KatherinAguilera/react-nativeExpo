@@ -12,6 +12,8 @@ import { connect } from 'react-redux';
 
  function mapStateToProps(state) {
   return {
+    // consumir los reducer 
+    list: state.categoryList
   }
 }
 class CategoryList extends Component {
@@ -41,4 +43,4 @@ class CategoryList extends Component {
   }
 }
 
-export default CategoryList;
+export default connect(mapStateToProps)(CategoryList);
