@@ -9,7 +9,7 @@ import Separator from '../components/vertical-separator';
 import Suggestion from './../components/suggestion';
 import { connect } from 'react-redux';
 
- function mapStateToProps(state) {
+function mapStateToProps(state) {
   return {
     list: state.suggestionList
   }
@@ -21,10 +21,21 @@ class SuggestionList extends Component {
   // funcion empty
   renderEmtpy = () => <Empty text="No hay sugerencias :(" />
   itemSeparator = () => <Separator />
+  viewMovie = (item) => {
+    this.props.dispatch({
+      type: 'SET_SELECTED_MOVIE',
+      payload: {
+        movie: item,
+      }
+    })
+  }
   // recibe nuestro item y devuelve componente
   renderItem = ({item})=>{
     return (
-      <Suggestion {...item}/>
+      <Suggestion
+      {...item}
+      onPress={()=> { this.viewMovie(item) }}
+    />
     )
   }
   render() {
